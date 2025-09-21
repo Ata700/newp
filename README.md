@@ -1,2 +1,0 @@
-# newp
-about programming

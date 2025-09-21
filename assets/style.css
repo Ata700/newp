@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+body {
+    max-width: 100%; /* صفحه همیشه به اندازه مانیتور */
+    overflow-x: hidden; /* اسکرول افقی حذف بشه */
+}
+@font-face {
+    font-family: yekan-bakh-fanum-regular;
+    src: url(./fonts/yekanbakh/FaNum/Yekan\ Bakh\ FaNum\ 04\ Regular.ttf);
+}
+@font-face {
+    font-family: yekan-bakh-fanum-medium;
+    src: url(./fonts/yekanbakh/FaNum/Yekan\ Bakh\ FaNum\ 05\ Medium.ttf);
+}
+@font-face {
+    font-family: yekan-bakh-fanum-bold;
+    src: url(./fonts/yekanbakh/FaNum/Yekan\ Bakh\ FaNum\ 06\ Bold.ttf);
+}
+@font-face {
+    font-family: yekan-bakh-fanum-heavy;
+    src: url(./fonts/yekanbakh/FaNum/Yekan\ Bakh\ FaNum\ 07\ Heavy.ttf);
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #237d61;
+    height: 80px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* عرض حداکثر */
+    margin: 0 auto; /* وسط چین شدن */
+    padding: 0 16px; /* فاصله از لبه */
+}
+
+.t1 {
+    font-family: yekan-bakh-fanum-medium;
+    font-size: 25px;
+}
+
+.t2 {
+    font-family: yekan-bakh-fanum-regular;
+    font-size: 15px;
+}
+
+.header-links {
+    font-family: yekan-bakh-fanum-regular;
+}
+
+.header-link {
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.header-link:hover {
+    border-bottom: 2px solid #fff2cc;
+    transition: 0.3s;
+}
+
+.x {
+    color: #fff2cc;
+}
+
+.header-contact {
+    font-family: yekan-bakh-fanum-medium;
+    border-radius: 10px;
+    background-color: #fed65c;
+    padding: 8px 12px;
+}
+
+/* main */
+.content {
+    padding: 70px;
+    background-color: #237d61;
+    justify-content: space-between;
+    height: 658px;
+    .large-title,
+    .large-title2 {
+        font-family: yekan-bakh-fanum-heavy;
+    }
+    .subtitle,
+    .action {
+        font-family: yekan-bakh-fanum-medium;
+    }
+    .action {
+        gap: 24px;
+        .button {
+            width: 120px;
+            height: 48px;
+            background-color: #fed65c;
+            border-radius: 12px;
+        }
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .hero {
+        padding-right: 150px;
+    }
+}
+/* recent-requirements */
+.title-recenet {
+    justify-content: space-between;
+
+    .text {
+        color: #237d61;
+        font-family: yekan-bakh-fanum-bold;
+    }
+    .subtitle2 {
+        color: #7b7b7b;
+        font-family: yekan-bakh-fanum-regular;
+    }
+}
+.right h2 {
+    padding-top: 10px;
+    font-family: yekan-bakh-fanum-bold;
+}
+.recent-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    .box1 {
+        display: flex;
+
+        gap: 24px;
+        border: 1px solid #deece7;
+        width: 48%;
+
+        height: 232px;
+        padding: 16px;
+        .r1 {
+            .button1 {
+                border-radius: 8px;
+                background-color: #fed65c;
+                width: 200px;
+                height: 40px;
+            }
+        }
+        .items {
+            display: flex;
+        }
+
+        .sub {
+            font-family: yekan-bakh-fanum-regular;
+            color: #7b7b7b;
+        }
+        h4 {
+            padding-top: 5px;
+            font-family: yekan-bakh-fanum-bold;
+        }
+    }
+}
+/* ways-to-help-others */
+.ways-to-help-others {
+    display: flex;
+    flex-direction: column;
+    .up {
+        padding-top: 240px;
+    }
+    .middle-img {
+        position: relative;
+        text-align: center;
+        margin-bottom: -100px;
+        border-radius: 16px;
+    }
+    .down {
+        overflow: visible;
+        gap: 10px;
+        height: 500px;
+        text-align: center;
+
+        img {
+            padding-top: 150px;
+            padding-right: 260px;
+        }
+        h2 {
+            font-family: yekan-bakh-fanum-bold;
+            margin-top: 10px;
+
+            color: white;
+            span {
+                color: #fed65c;
+            }
+        }
+        p {
+            color: #f1f1f1;
+            font-family: yekan-bakh-fanum-regular;
+        }
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -75px;
+
+        .cards {
+            .box {
+                background-color: #fdfdfd;
+                border: 1.5px;
+                border-radius: 8px;
+                margin-right: 32px;
+                text-align: center;
+                img {
+                    padding: 0;
+                    padding-top: 20px;
+                }
+                h3 {
+                    font-family: yekan-bakh-fanum-bold;
+                    padding-top: 12px;
+                    font-size: 16px;
+                }
+                p {
+                    color: #4a4a4a;
+                    font-family: yekan-bakh-fanum-regular;
+                }
+            }
+        }
+    }
+}
+
+/* Memorandum */
+.memorandum {
+    .title-memorandum {
+        display: flex;
+        margin-top: 128px;
+        justify-content: space-between;
+        .right-memorandum {
+            margin-right: 32px;
+            img {
+                margin-bottom: 5px;
+            }
+            h2 {
+                font-family: yekan-bakh-fanum-bold;
+                span {
+                    color: #237d61;
+                }
+            }
+            p {
+                color: #7b7b7b;
+                font-size: 14px;
+            }
+        }
+        .left-memorandum {
+            .pagination {
+                button {
+                    margin-top: 12px;
+                    background-color: white;
+                    padding: 8px;
+                    border: none;
+                }
+            }
+        }
+    }
+    .content-memorandum {
+        display: flex;
+        overflow: hidden;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    button {
+        margin-top: 30px;
+        border: none;
+        padding-right: 600px;
+        background-color: white;
+    }
+}
+
+/* banner */
+.banners {
+    margin-block: 64px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        background-color: red;
+    }
+}
